@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <EditText
+            android:id="@+id/editTextValordaconta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Valor da conta"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/editTextQualidadedoserviço"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Qualidade do serviço:"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/btnCalculargorjeta"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculador Gorjeta" />
+
+        <TextView
+            android:id="@+id/editTextGorgeta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonCalculate"
+            android:layout_marginTop="16dp"
+            android:inputType="numberDecimal"
+            android:text="Valor da Gorjeta: R$0.00" />
+
+        <TextView
+            android:id="@+id/editTextValortotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonCalculate"
+            android:layout_marginTop="16dp"
+            android:text="Valor da Gorjeta: R$0.00"
+            android:inputType="numberDecimal" />
+
+
+    </LinearLayout>
+</RelativeLayout>
